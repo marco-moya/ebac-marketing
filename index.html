@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FitLife Pro - Plataforma de fitness online. Transforma tu cuerpo desde casa con más de 500 clases y instructores certificados. Prueba gratis 7 días."
+    />
+    <title>
+      FitLife Pro - Transforma tu cuerpo desde casa | Fitness Online
+    </title>
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="header__nav nav">
+        <div class="nav__container">
+          <!-- Logo -->
+          <div class="nav__brand">
+            <img
+              src="assets/images/logo-fitlife.svg"
+              alt="FitLife Pro"
+              class="nav__logo"
+            />
+          </div>
+
+          <!-- Desktop Menu -->
+          <ul class="nav__menu nav__menu--desktop">
+            <li class="nav__item">
+              <a href="#inicio" class="nav__link">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#planes" class="nav__link">Planes</a>
+            </li>
+            <li class="nav__item">
+              <a href="#testimonios" class="nav__link">Testimonios</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacto" class="nav__link">Contacto</a>
+            </li>
+          </ul>
+
+          <!-- CTA Button -->
+          <a href="#registro" class="nav__cta btn btn--primary"
+            >Prueba Gratis 7 Días</a
+          >
+
+          <!-- Mobile Menu Toggle -->
+          <button class="nav__toggle" aria-label="Abrir menú de navegación">
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+          </button>
+
+          <!-- Mobile Menu -->
+          <div class="nav__menu nav__menu--mobile">
+            <ul class="nav__menu-list">
+              <li class="nav__item">
+                <a href="#inicio" class="nav__link">Inicio</a>
+              </li>
+              <li class="nav__item">
+                <a href="#planes" class="nav__link">Planes</a>
+              </li>
+              <li class="nav__item">
+                <a href="#testimonios" class="nav__link">Testimonios</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contacto" class="nav__link">Contacto</a>
+              </li>
+            </ul>
+            <a href="#registro" class="nav__cta--mobile btn btn--primary"
+              >Prueba Gratis 7 Días</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section class="hero" id="inicio">
+        <div class="hero__background">
+          <video class="hero__video" autoplay muted loop playsinline>
+            <source src="assets/videos/hero-workout.mp4" type="video/mp4" />
+            Tu navegador no soporta videos HTML5.
+          </video>
+          <div class="hero__overlay"></div>
+        </div>
+
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Transforma tu cuerpo
+              <span class="hero__title-accent">desde casa</span>
+            </h1>
+            <p class="hero__subtitle">
+              Accede a +500 clases y entrena con los mejores instructores
+              certificados. Sin contratos, sin compromisos.
+            </p>
+
+            <!-- Registration Form -->
+            <form class="hero__form form">
+              <div class="form__group">
+                <input
+                  type="email"
+                  class="form__input form__input--email"
+                  placeholder="Ingresa tu email"
+                  required
+                  aria-label="Correo electrónico"
+                />
+                <button type="submit" class="form__submit btn btn--secondary">
+                  Comenzar Gratis
+                </button>
+              </div>
+            </form>
+
+            <!-- Trust Indicators -->
+            <div class="hero__trust trust-indicators">
+              <div class="trust-indicators__item">
+                <span class="trust-indicators__number">50,000+</span>
+                <span class="trust-indicators__text">usuarios activos</span>
+              </div>
+              <div class="trust-indicators__item">
+                <span class="trust-indicators__number">4.9/5</span>
+                <span class="trust-indicators__text">calificación</span>
+              </div>
+              <div class="trust-indicators__item">
+                <span class="trust-indicators__number">7 días</span>
+                <span class="trust-indicators__text">prueba gratis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFITS SECTION -->
+      <section class="benefits">
+        <div class="benefits__container">
+          <div class="benefits__header">
+            <h2 class="benefits__title section-title">
+              ¿Por qué elegir
+              <span class="section-title__accent">FitLife Pro?</span>
+            </h2>
+            <p class="benefits__subtitle section-subtitle">
+              La plataforma de fitness más completa para alcanzar tus objetivos
+            </p>
+          </div>
+
+          <div class="benefits__grid">
+            <div class="benefits__item benefit-card">
+              <div class="benefit-card__icon">
+                <img
+                  src="assets/images/icons/home-icon.svg"
+                  alt="Entrena desde casa"
+                />
+              </div>
+              <h3 class="benefit-card__title">Entrena desde casa</h3>
+              <p class="benefit-card__description">
+                No necesitas ir al gimnasio. Entrena cómodamente desde tu hogar
+                con equipamiento mínimo.
+              </p>
+            </div>
+
+            <div class="benefits__item benefit-card">
+              <div class="benefit-card__icon">
+                <img
+                  src="assets/images/icons/clock-icon.svg"
+                  alt="Acceso 24/7"
+                />
+              </div>
+              <h3 class="benefit-card__title">Acceso ilimitado 24/7</h3>
+              <p class="benefit-card__description">
+                Entrena cuando quieras, donde quieras. Nuestra plataforma está
+                disponible las 24 horas del día.
+              </p>
+            </div>
+
+            <div class="benefits__item benefit-card">
+              <div class="benefit-card__icon">
+                <img
+                  src="assets/images/icons/instructor-icon.svg"
+                  alt="Instructores certificados"
+                />
+              </div>
+              <h3 class="benefit-card__title">Instructores certificados</h3>
+              <p class="benefit-card__description">
+                Aprende de los mejores. Todos nuestros instructores son
+                profesionales certificados con años de experiencia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCT DEMO SECTION -->
+      <section class="demo">
+        <div class="demo__container">
+          <div class="demo__content">
+            <div class="demo__text">
+              <h2 class="demo__title section-title">
+                Descubre nuestra
+                <span class="section-title__accent">plataforma</span>
+              </h2>
+              <p class="demo__subtitle section-subtitle">
+                Una experiencia de entrenamiento completamente nueva que se
+                adapta a tu estilo de vida
+              </p>
+
+              <ul class="demo__features features-list">
+                <li class="features-list__item">
+                  <span class="features-list__icon">✓</span>
+                  <span class="features-list__text"
+                    >Clases en vivo y grabadas</span
+                  >
+                </li>
+                <li class="features-list__item">
+                  <span class="features-list__icon">✓</span>
+                  <span class="features-list__text"
+                    >Planes personalizados según tus objetivos</span
+                  >
+                </li>
+                <li class="features-list__item">
+                  <span class="features-list__icon">✓</span>
+                  <span class="features-list__text"
+                    >Seguimiento de progreso en tiempo real</span
+                  >
+                </li>
+                <li class="features-list__item">
+                  <span class="features-list__icon">✓</span>
+                  <span class="features-list__text"
+                    >Comunidad activa de apoyo</span
+                  >
+                </li>
+              </ul>
+
+              <button class="demo__cta btn btn--primary">
+                Ver Demo Gratuita
+              </button>
+            </div>
+
+            <div class="demo__media">
+              <div class="demo__video-container">
+                <img
+                  src="assets/images/app-preview.jpg"
+                  alt="Preview de la aplicación FitLife Pro"
+                  class="demo__image"
+                />
+                <button
+                  class="demo__play-btn play-button"
+                  aria-label="Reproducir video demo"
+                >
+                  <svg class="play-button__icon" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING SECTION -->
+      <section class="pricing" id="planes">
+        <div class="pricing__container">
+          <div class="pricing__header">
+            <h2 class="pricing__title section-title">
+              Elige el plan perfecto para
+              <span class="section-title__accent">ti</span>
+            </h2>
+            <p class="pricing__subtitle section-subtitle">
+              Sin contratos. Sin compromisos. Cancela cuando quieras.
+            </p>
+          </div>
+
+          <div class="pricing__grid">
+            <!-- Basic Plan -->
+            <div class="pricing__item pricing-card">
+              <div class="pricing-card__header">
+                <h3 class="pricing-card__name">Básico</h3>
+                <div class="pricing-card__price">
+                  <span class="pricing-card__amount">$19</span>
+                  <span class="pricing-card__period">/mes</span>
+                </div>
+              </div>
+              <ul class="pricing-card__features">
+                <li class="pricing-card__feature">Acceso a clases grabadas</li>
+                <li class="pricing-card__feature">Plan de ejercicios básico</li>
+                <li class="pricing-card__feature">Soporte por email</li>
+                <li class="pricing-card__feature">App móvil</li>
+              </ul>
+              <button
+                class="pricing-card__cta btn btn--outline"
+                data-plan="basic"
+              >
+                Seleccionar Plan
+              </button>
+            </div>
+
+            <!-- Pro Plan (Popular) -->
+            <div class="pricing__item pricing-card pricing-card--popular">
+              <div class="pricing-card__badge">Más Popular</div>
+              <div class="pricing-card__header">
+                <h3 class="pricing-card__name">Pro</h3>
+                <div class="pricing-card__price">
+                  <span class="pricing-card__amount">$39</span>
+                  <span class="pricing-card__period">/mes</span>
+                </div>
+              </div>
+              <ul class="pricing-card__features">
+                <li class="pricing-card__feature">Todo del plan Básico</li>
+                <li class="pricing-card__feature">Clases en vivo ilimitadas</li>
+                <li class="pricing-card__feature">Planes personalizados</li>
+                <li class="pricing-card__feature">Seguimiento de progreso</li>
+                <li class="pricing-card__feature">Soporte prioritario</li>
+              </ul>
+              <button
+                class="pricing-card__cta btn btn--primary"
+                data-plan="pro"
+              >
+                Seleccionar Plan
+              </button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing__item pricing-card">
+              <div class="pricing-card__header">
+                <h3 class="pricing-card__name">Premium</h3>
+                <div class="pricing-card__price">
+                  <span class="pricing-card__amount">$59</span>
+                  <span class="pricing-card__period">/mes</span>
+                </div>
+              </div>
+              <ul class="pricing-card__features">
+                <li class="pricing-card__feature">Todo del plan Pro</li>
+                <li class="pricing-card__feature">
+                  Sesiones 1-a-1 con instructor
+                </li>
+                <li class="pricing-card__feature">Planes de nutrición</li>
+                <li class="pricing-card__feature">
+                  Acceso a challenges exclusivos
+                </li>
+                <li class="pricing-card__feature">Soporte 24/7</li>
+              </ul>
+              <button
+                class="pricing-card__cta btn btn--outline"
+                data-plan="premium"
+              >
+                Seleccionar Plan
+              </button>
+            </div>
+          </div>
+
+          <!-- Money Back Guarantee -->
+          <div class="pricing__guarantee">
+            <p class="pricing__guarantee-text">
+              💰 <strong>Garantía de devolución de 30 días</strong> - Si no
+              estás satisfecho, te devolvemos tu dinero sin preguntas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SECTION -->
+      <section class="testimonials" id="testimonios">
+        <div class="testimonials__container">
+          <div class="testimonials__header">
+            <h2 class="testimonials__title section-title">
+              Lo que dicen nuestros
+              <span class="section-title__accent">miembros</span>
+            </h2>
+            <p class="testimonials__subtitle section-subtitle">
+              Miles de personas ya han transformado sus vidas con FitLife Pro
+            </p>
+          </div>
+
+          <div class="testimonials__carousel carousel">
+            <div class="carousel__container">
+              <!-- Testimonial 1 -->
+              <div class="carousel__item testimonial-card">
+                <div class="testimonial-card__content">
+                  <div class="testimonial-card__rating">
+                    <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p class="testimonial-card__text">
+                    "Increíble plataforma! He perdido 15kg en 4 meses y nunca me
+                    he sentido mejor. Los instructores son fantásticos y la
+                    variedad de clases es impresionante."
+                  </p>
+                  <div class="testimonial-card__author">
+                    <img
+                      src="assets/images/testimonials/maria-gonzalez.jpg"
+                      alt="María González"
+                      class="testimonial-card__avatar"
+                    />
+                    <div class="testimonial-card__info">
+                      <h4 class="testimonial-card__name">María González</h4>
+                      <p class="testimonial-card__role">
+                        Miembro desde hace 8 meses
+                      </p>
+                      <div class="testimonial-card__stats">
+                        <span class="testimonial-card__stat">📉 -15kg</span>
+                        <span class="testimonial-card__stat"
+                          >💪 +120 clases</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="carousel__item testimonial-card">
+                <div class="testimonial-card__content">
+                  <div class="testimonial-card__rating">
+                    <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p class="testimonial-card__text">
+                    "Como padre de familia, no tenía tiempo para ir al gimnasio.
+                    FitLife Pro me permitió entrenar en casa y estar en la mejor
+                    forma de mi vida."
+                  </p>
+                  <div class="testimonial-card__author">
+                    <img
+                      src="assets/images/testimonials/carlos-rodriguez.jpg"
+                      alt="Carlos Rodríguez"
+                      class="testimonial-card__avatar"
+                    />
+                    <div class="testimonial-card__info">
+                      <h4 class="testimonial-card__name">Carlos Rodríguez</h4>
+                      <p class="testimonial-card__role">
+                        Miembro desde hace 1 año
+                      </p>
+                      <div class="testimonial-card__stats">
+                        <span class="testimonial-card__stat"
+                          >🏠 350+ entrenamientos</span
+                        >
+                        <span class="testimonial-card__stat"
+                          >⏰ Ahorro: 2h diarias</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="carousel__item testimonial-card">
+                <div class="testimonial-card__content">
+                  <div class="testimonial-card__rating">
+                    <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p class="testimonial-card__text">
+                    "La comunidad es lo mejor de FitLife Pro. El apoyo constante
+                    y la motivación de otros miembros hace que nunca quiera
+                    rendirme."
+                  </p>
+                  <div class="testimonial-card__author">
+                    <img
+                      src="assets/images/testimonials/ana-martinez.jpg"
+                      alt="Ana Martínez"
+                      class="testimonial-card__avatar"
+                    />
+                    <div class="testimonial-card__info">
+                      <h4 class="testimonial-card__name">Ana Martínez</h4>
+                      <p class="testimonial-card__role">
+                        Miembro desde hace 6 meses
+                      </p>
+                      <div class="testimonial-card__stats">
+                        <span class="testimonial-card__stat"
+                          >🤝 200+ amigos fitness</span
+                        >
+                        <span class="testimonial-card__stat"
+                          >🏆 5 challenges ganados</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="carousel__item testimonial-card">
+                <div class="testimonial-card__content">
+                  <div class="testimonial-card__rating">
+                    <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p class="testimonial-card__text">
+                    "Después de años de intentar diferentes métodos, FitLife Pro 
+                    fue el único que realmente funcionó. Los planes personalizados 
+                    se adaptan perfectamente a mi horario de trabajo."
+                  </p>
+                  <div class="testimonial-card__author">
+                    <img
+                      src="assets/images/testimonials/luis-morales.jpg"
+                      alt="Luis Morales"
+                      class="testimonial-card__avatar"
+                    />
+                    <div class="testimonial-card__info">
+                      <h4 class="testimonial-card__name">Luis Morales</h4>
+                      <p class="testimonial-card__role">
+                        Miembro desde hace 10 meses
+                      </p>
+                      <div class="testimonial-card__stats">
+                        <span class="testimonial-card__stat">⚡ -22kg perdidos</span>
+                        <span class="testimonial-card__stat">📈 Fuerza +40%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 5 -->
+              <div class="carousel__item testimonial-card">
+                <div class="testimonial-card__content">
+                  <div class="testimonial-card__rating">
+                    <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p class="testimonial-card__text">
+                    "Como principiante total en fitness, estaba intimidada al inicio. 
+                    Pero los instructores de FitLife Pro me guiaron paso a paso. 
+                    Ahora el ejercicio es mi momento favorito del día."
+                  </p>
+                  <div class="testimonial-card__author">
+                    <img
+                      src="assets/images/testimonials/sofia-herrera.jpg"
+                      alt="Sofía Herrera"
+                      class="testimonial-card__avatar"
+                    />
+                    <div class="testimonial-card__info">
+                      <h4 class="testimonial-card__name">Sofía Herrera</h4>
+                      <p class="testimonial-card__role">
+                        Miembro desde hace 4 meses
+                      </p>
+                      <div class="testimonial-card__stats">
+                        <span class="testimonial-card__stat">🔰 De 0 a experta</span>
+                        <span class="testimonial-card__stat">💯 98% asistencia</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <button
+              class="carousel__btn carousel__btn--prev"
+              aria-label="Testimonial anterior"
+            >
+              ‹
+            </button>
+            <button
+              class="carousel__btn carousel__btn--next"
+              aria-label="Siguiente testimonial"
+            >
+              ›
+            </button>
+
+            <!-- Carousel Dots -->
+            <div class="carousel__dots">
+              <button
+                class="carousel__dot carousel__dot--active"
+                aria-label="Ir al testimonial 1"
+                data-slide="0"
+              ></button>
+              <button
+                class="carousel__dot"
+                aria-label="Ir al testimonial 2"
+                data-slide="1"
+              ></button>
+              <button
+                class="carousel__dot"
+                aria-label="Ir al testimonial 3"
+                data-slide="2"
+              ></button>
+              <button
+                class="carousel__dot"
+                aria-label="Ir al testimonial 4"
+                data-slide="3"
+              ></button>
+              <button
+                class="carousel__dot"
+                aria-label="Ir al testimonial 5"
+                data-slide="4"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- URGENCY SECTION -->
+      <section class="urgency">
+        <div class="urgency__container">
+          <div class="urgency__content">
+            <h2 class="urgency__title">
+              ⚡ Oferta Especial por Tiempo Limitado
+            </h2>
+            <p class="urgency__subtitle">
+              Obtén 50% de descuento en tu primer mes + 7 días gratis
+            </p>
+
+            <!-- Countdown Timer -->
+            <div class="urgency__countdown countdown">
+              <div class="countdown__item">
+                <span class="countdown__number" id="countdown-days">23</span>
+                <span class="countdown__label">Días</span>
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__number" id="countdown-hours">15</span>
+                <span class="countdown__label">Horas</span>
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__number" id="countdown-minutes">42</span>
+                <span class="countdown__label">Minutos</span>
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__number" id="countdown-seconds">18</span>
+                <span class="countdown__label">Segundos</span>
+              </div>
+            </div>
+
+            <div class="urgency__cta">
+              <button class="btn btn--large btn--secondary">
+                Reclamar Oferta Ahora
+              </button>
+              <p class="urgency__disclaimer">
+                * Válido solo para nuevos miembros. Oferta limitada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="faq">
+        <div class="faq__container">
+          <div class="faq__header">
+            <h2 class="faq__title section-title">
+              Preguntas <span class="section-title__accent">Frecuentes</span>
+            </h2>
+            <p class="faq__subtitle section-subtitle">
+              Resolvemos tus dudas más comunes sobre FitLife Pro
+            </p>
+          </div>
+
+          <div class="faq__list">
+            <!-- FAQ Item 1 -->
+            <div class="faq__item faq-item">
+              <button class="faq-item__question" aria-expanded="false">
+                <span>¿Necesito equipamiento especial para entrenar?</span>
+                <span class="faq-item__icon"></span>
+              </button>
+              <div class="faq-item__answer">
+                <p>
+                  No necesitas equipamiento especial para comenzar. La mayoría
+                  de nuestras clases se pueden realizar solo con el peso
+                  corporal. Para algunas clases avanzadas, podrías necesitar
+                  mancuernas básicas o una colchoneta de yoga.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq__item faq-item">
+              <button class="faq-item__question" aria-expanded="false">
+                <span
+                  >¿Puedo cancelar mi suscripción en cualquier momento?</span
+                >
+                <span class="faq-item__icon"></span>
+              </button>
+              <div class="faq-item__answer">
+                <p>
+                  Sí, puedes cancelar tu suscripción en cualquier momento desde
+                  tu panel de control. No hay contratos ni penalizaciones por
+                  cancelación anticipada.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq__item faq-item">
+              <button class="faq-item__question" aria-expanded="false">
+                <span
+                  >¿Las clases están disponibles en diferentes niveles?</span
+                >
+                <span class="faq-item__icon"></span>
+              </button>
+              <div class="faq-item__answer">
+                <p>
+                  Absolutamente. Ofrecemos clases para principiantes,
+                  intermedios y avanzados. Cada clase está claramente etiquetada
+                  con su nivel de dificultad para que puedas elegir la adecuada
+                  para ti.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq__item faq-item">
+              <button class="faq-item__question" aria-expanded="false">
+                <span>¿Puedo usar FitLife Pro en múltiples dispositivos?</span>
+                <span class="faq-item__icon"></span>
+              </button>
+              <div class="faq-item__answer">
+                <p>
+                  Sí, tu suscripción te permite acceder a FitLife Pro desde
+                  cualquier dispositivo: smartphone, tablet, computadora o smart
+                  TV. Tu progreso se sincroniza automáticamente entre todos tus
+                  dispositivos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contacto">
+      <div class="footer__container">
+        <div class="footer__content">
+          <!-- Brand Section -->
+          <div class="footer__brand">
+            <img
+              src="assets/images/logo-fitlife-white.svg"
+              alt="FitLife Pro"
+              class="footer__logo"
+            />
+            <p class="footer__description">
+              La plataforma de fitness online más completa para transformar tu
+              vida desde casa.
+            </p>
+            <div class="footer__social social-links">
+              <a
+                href="#"
+                class="social-links__item"
+                aria-label="Síguenos en Facebook"
+              >
+                <img src="assets/images/icons/facebook.svg" alt="Facebook" />
+              </a>
+              <a
+                href="#"
+                class="social-links__item"
+                aria-label="Síguenos en Instagram"
+              >
+                <img src="assets/images/icons/instagram.svg" alt="Instagram" />
+              </a>
+              <a
+                href="#"
+                class="social-links__item"
+                aria-label="Síguenos en YouTube"
+              >
+                <img src="assets/images/icons/youtube.svg" alt="YouTube" />
+              </a>
+              <a
+                href="#"
+                class="social-links__item"
+                aria-label="Síguenos en Twitter"
+              >
+                <img src="assets/images/icons/twitter.svg" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Links Sections -->
+          <div class="footer__links">
+            <div class="footer__section">
+              <h4 class="footer__section-title">Plataforma</h4>
+              <ul class="footer__section-list">
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link">Clases en Vivo</a>
+                </li>
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link">Clases Grabadas</a>
+                </li>
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link"
+                    >Planes Personalizados</a
+                  >
+                </li>
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link">App Móvil</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__section">
+              <h4 class="footer__section-title">Soporte</h4>
+              <ul class="footer__section-list">
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link">Centro de Ayuda</a>
+                </li>
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link">Contactanos</a>
+                </li>
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link">Chat en Vivo</a>
+                </li>
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link"
+                    >Estado del Sistema</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__section">
+              <h4 class="footer__section-title">Legal</h4>
+              <ul class="footer__section-list">
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link"
+                    >Términos de Servicio</a
+                  >
+                </li>
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link"
+                    >Política de Privacidad</a
+                  >
+                </li>
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link"
+                    >Política de Cookies</a
+                  >
+                </li>
+                <li class="footer__section-item">
+                  <a href="#" class="footer__section-link"
+                    >Política de Reembolso</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Newsletter Section -->
+          <div class="footer__newsletter newsletter">
+            <h4 class="newsletter__title">Mantente al día</h4>
+            <p class="newsletter__description">
+              Recibe tips de fitness, nuevas clases y ofertas exclusivas directo
+              en tu email.
+            </p>
+            <form class="newsletter__form">
+              <div class="newsletter__form-group">
+                <input
+                  type="email"
+                  class="newsletter__input"
+                  placeholder="Tu email aquí"
+                  required
+                  aria-label="Email para newsletter"
+                />
+                <button
+                  type="submit"
+                  class="newsletter__submit btn btn--primary"
+                >
+                  Suscribirse
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom">
+          <div class="footer__bottom-content">
+            <p class="footer__copyright">
+              © 2025 FitLife Pro. Todos los derechos reservados.
+            </p>
+            <div class="footer__bottom-links">
+              <a href="#" class="footer__bottom-link">Términos</a>
+              <a href="#" class="footer__bottom-link">Privacidad</a>
+              <a href="#" class="footer__bottom-link">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
