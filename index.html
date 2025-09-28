@@ -436,9 +436,9 @@
             </div>
 
             <!-- Carousel Slides -->
-            <ul class="carousel__container slides" role="tabpanel" aria-label="Testimonios de usuarios">
+            <ul class="carousel__container slides" aria-label="Testimonios de usuarios">
               <!-- Testimonial 1 -->
-              <li class="carousel__item testimonial-card">
+              <li class="carousel__item testimonial-card" id="panel-1" aria-labelledby="dot-1">
                 <div class="testimonial-card__content">
                   <div class="testimonial-card__rating">
                     <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
@@ -455,7 +455,7 @@
                       class="testimonial-card__avatar"
                     />
                     <div class="testimonial-card__info">
-                      <h4 class="testimonial-card__name">María González</h4>
+                      <h3 class="testimonial-card__name">María González</h3>
                       <p class="testimonial-card__role">
                         Miembro desde hace 8 meses
                       </p>
@@ -471,7 +471,7 @@
               </li>
 
               <!-- Testimonial 2 -->
-              <li class="carousel__item testimonial-card">
+              <li class="carousel__item testimonial-card" id="panel-2" aria-labelledby="dot-2">
                 <div class="testimonial-card__content">
                   <div class="testimonial-card__rating">
                     <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
@@ -488,7 +488,7 @@
                       class="testimonial-card__avatar"
                     />
                     <div class="testimonial-card__info">
-                      <h4 class="testimonial-card__name">Carlos Rodríguez</h4>
+                      <h3 class="testimonial-card__name">Carlos Rodríguez</h3>
                       <p class="testimonial-card__role">
                         Miembro desde hace 1 año
                       </p>
@@ -506,7 +506,7 @@
               </li>
 
               <!-- Testimonial 3 -->
-              <li class="carousel__item testimonial-card">
+              <li class="carousel__item testimonial-card" id="panel-3" aria-labelledby="dot-3">
                 <div class="testimonial-card__content">
                   <div class="testimonial-card__rating">
                     <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
@@ -523,7 +523,7 @@
                       class="testimonial-card__avatar"
                     />
                     <div class="testimonial-card__info">
-                      <h4 class="testimonial-card__name">Ana Martínez</h4>
+                      <h3 class="testimonial-card__name">Ana Martínez</h3>
                       <p class="testimonial-card__role">
                         Miembro desde hace 6 meses
                       </p>
@@ -541,7 +541,7 @@
               </li>
 
               <!-- Testimonial 4 -->
-              <li class="carousel__item testimonial-card">
+              <li class="carousel__item testimonial-card" id="panel-4" aria-labelledby="dot-4">
                 <div class="testimonial-card__content">
                   <div class="testimonial-card__rating">
                     <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
@@ -558,7 +558,7 @@
                       class="testimonial-card__avatar"
                     />
                     <div class="testimonial-card__info">
-                      <h4 class="testimonial-card__name">Luis Morales</h4>
+                      <h3 class="testimonial-card__name">Luis Morales</h3>
                       <p class="testimonial-card__role">
                         Miembro desde hace 10 meses
                       </p>
@@ -572,7 +572,7 @@
               </li>
 
               <!-- Testimonial 5 -->
-              <li class="carousel__item testimonial-card">
+              <li class="carousel__item testimonial-card" id="panel-5" aria-labelledby="dot-5">
                 <div class="testimonial-card__content">
                   <div class="testimonial-card__rating">
                     <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
@@ -589,7 +589,7 @@
                       class="testimonial-card__avatar"
                     />
                     <div class="testimonial-card__info">
-                      <h4 class="testimonial-card__name">Sofía Herrera</h4>
+                      <h3 class="testimonial-card__name">Sofía Herrera</h3>
                       <p class="testimonial-card__role">
                         Miembro desde hace 4 meses
                       </p>
@@ -604,13 +604,13 @@
             </ul>
 
             <!-- Carousel Dots -->
-            <aside class="carousel__dots" role="tablist" aria-label="Indicadores de testimonios">
-              <label for="slide-1" id="dot-1" role="tab" aria-label="Ir al testimonio de María González" tabindex="0"></label>
-              <label for="slide-2" id="dot-2" role="tab" aria-label="Ir al testimonio de Carlos Rodríguez" tabindex="0"></label>
-              <label for="slide-3" id="dot-3" role="tab" aria-label="Ir al testimonio de Ana Martínez" tabindex="0"></label>
-              <label for="slide-4" id="dot-4" role="tab" aria-label="Ir al testimonio de Luis Morales" tabindex="0"></label>
-              <label for="slide-5" id="dot-5" role="tab" aria-label="Ir al testimonio de Sofía Herrera" tabindex="0"></label>
-            </aside>
+            <div class="carousel__dots" role="tablist" aria-label="Indicadores de testimonios">
+              <button type="button" id="dot-1" role="tab" aria-label="Ir al testimonio de María González" aria-controls="panel-1" aria-selected="true"></button>
+              <button type="button" id="dot-2" role="tab" aria-label="Ir al testimonio de Carlos Rodríguez" aria-controls="panel-2" aria-selected="false"></button>
+              <button type="button" id="dot-3" role="tab" aria-label="Ir al testimonio de Ana Martínez" aria-controls="panel-3" aria-selected="false"></button>
+              <button type="button" id="dot-4" role="tab" aria-label="Ir al testimonio de Luis Morales" aria-controls="panel-4" aria-selected="false"></button>
+              <button type="button" id="dot-5" role="tab" aria-label="Ir al testimonio de Sofía Herrera" aria-controls="panel-5" aria-selected="false"></button>
+            </div>
 
           </article>
         </div>
@@ -805,7 +805,7 @@
           <!-- Links Sections -->
           <div class="footer__links">
             <div class="footer__section">
-              <h4 class="footer__section-title">Plataforma</h4>
+              <h3 class="footer__section-title">Plataforma</h3>
               <ul class="footer__section-list">
                 <li class="footer__section-item">
                   <a href="#" class="footer__section-link">Clases en Vivo</a>
@@ -825,7 +825,7 @@
             </div>
 
             <div class="footer__section">
-              <h4 class="footer__section-title">Soporte</h4>
+              <h3 class="footer__section-title">Soporte</h3>
               <ul class="footer__section-list">
                 <li class="footer__section-item">
                   <a href="#" class="footer__section-link">Centro de Ayuda</a>
@@ -845,7 +845,7 @@
             </div>
 
             <div class="footer__section">
-              <h4 class="footer__section-title">Legal</h4>
+              <h3 class="footer__section-title">Legal</h3>
               <ul class="footer__section-list">
                 <li class="footer__section-item">
                   <a href="#" class="footer__section-link"

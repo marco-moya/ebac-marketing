@@ -16,7 +16,7 @@
   --color-secondary-dark: #171b20;  
   /* Neutral Colors */
   --color-text-primary: #2C3E50;    /* Texto principal */
-  --color-text-secondary: #718096;  /* Texto secundario */
+  --color-text-secondary: #596576;  /* Texto secundario */
   --color-text-light: #A0AEC0;      /* Texto claro */
   --color-text-white: #FFFFFF;      /* Texto blanco */
   
@@ -234,7 +234,7 @@ input, textarea, select {
 }
 
 .section-title__accent {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
 
 @media (min-width: 768px) {

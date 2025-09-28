@@ -231,7 +231,9 @@ Este proyecto está bajo la licencia MIT. Ver archivo `LICENSE` para más detall
 ## 📞 Contacto
 
 **Desarrollador**: Marco Moya
+
 **Email**: email@example.com
+
 **LinkedIn**: [Marco Antonio Moya Narvaéz
 ](https://www.linkedin.com/in/marco-a-moya/)
 
