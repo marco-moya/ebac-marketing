@@ -105,7 +105,6 @@ Sistema basado en múltiplos de 4px:
 ### 4. Carrusel de Testimonios
 - Navegación manual con botones
 - Indicadores (dots) activos
-- Auto-play con pausa en hover
 - Responsive
 
 ### 5. FAQ Accordion
@@ -187,42 +186,6 @@ Sistema basado en múltiplos de 4px:
 - Solo email requerido inicialmente
 - Proceso de registro claro
 
-## 🔧 Instalación y Uso
-
-### Requisitos:
-- Navegador web moderno
-- Servidor local (opcional para desarrollo)
-
-### Pasos:
-
-1. **Clonar o descargar** el proyecto
-2. **Abrir `index.html`** en tu navegador
-3. **Para desarrollo local** con servidor:
-   ```bash
-   # Con Python
-   python -m http.server 8000
-   
-   # Con Node.js (live-server)
-   npx live-server
-   
-   # Con PHP
-   php -S localhost:8000
-   ```
-
-## 📊 Métricas a Medir
-
-### KPIs Principales:
-- **Tasa de conversión** (visitantes → leads)
-- **Tiempo en página** (engagement)
-- **Scroll depth** (interés en contenido)
-- **Clics en CTAs** (intención)
-
-### Herramientas Recomendadas:
-- Google Analytics 4
-- Google Tag Manager
-- Hotjar (heatmaps)
-- Google Search Console
-
 ## 🎨 Recursos de Assets
 
 ### Imágenes Necesarias:
@@ -232,9 +195,9 @@ assets/images/
 ├── logo-fitlife-white.svg     # Logo blanco para footer
 ├── app-preview.jpg            # Preview de la aplicación
 ├── icons/
-│   ├── home-icon.svg
-│   ├── clock-icon.svg
-│   ├── instructor-icon.svg
+│   ├── dumbell-icon.svg
+│   ├── infinity-icon.svg
+│   ├── certificate-icon.svg
 │   ├── facebook.svg
 │   ├── instagram.svg
 │   ├── youtube.svg
@@ -250,22 +213,6 @@ assets/images/
 assets/videos/
 └── hero-workout.mp4           # Video de fondo del hero
 ```
-
-## 🚀 Próximas Mejoras
-
-### Fase 2 - Funcionalidades Avanzadas:
-- [ ] Sistema de A/B testing
-- [ ] Chat bot integrado
-- [ ] Calculadora de IMC interactiva
-- [ ] Integración con redes sociales
-- [ ] PWA (Progressive Web App)
-
-### Fase 3 - Integraciones:
-- [ ] Google Analytics 4
-- [ ] Facebook Pixel
-- [ ] Email marketing (Mailchimp)
-- [ ] CRM integration
-- [ ] Payment gateway
 
 ## 🤝 Contribuciones
 
@@ -283,9 +230,10 @@ Este proyecto está bajo la licencia MIT. Ver archivo `LICENSE` para más detall
 
 ## 📞 Contacto
 
-**Desarrollador**: Tu Nombre
-**Email**: tu.email@example.com
-**LinkedIn**: [tu-perfil](https://linkedin.com/in/tu-perfil)
+**Desarrollador**: Marco Moya
+**Email**: email@example.com
+**LinkedIn**: [Marco Antonio Moya Narvaéz
+](https://www.linkedin.com/in/marco-a-moya/)
 
 ---
 

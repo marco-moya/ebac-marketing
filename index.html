@@ -10,20 +10,14 @@
     <title>
       FitLife Pro - Transforma tu cuerpo desde casa | Fitness Online
     </title>
-
-    <!-- Preload critical fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-fit-life-pro.png" />
   </head>
   <body>
     <!-- HEADER -->
@@ -33,7 +27,7 @@
           <!-- Logo -->
           <div class="nav__brand">
             <img
-              src="assets/images/logo-fitlife.svg"
+              src="assets/images/logo-fit-life-pro.png"
               alt="FitLife Pro"
               class="nav__logo"
             />
@@ -83,9 +77,9 @@
                 <a href="#contacto" class="nav__link">Contacto</a>
               </li>
             </ul>
-            <a href="#registro" class="nav__cta--mobile btn btn--primary"
-              >Prueba Gratis 7 Días</a
-            >
+            <a href="#registro" class="nav__cta--mobile btn btn--primary">
+              Prueba Gratis 7 Días
+            </a>
           </div>
         </div>
       </nav>
@@ -97,7 +91,7 @@
       <section class="hero" id="inicio">
         <div class="hero__background">
           <video class="hero__video" autoplay muted loop playsinline>
-            <source src="assets/videos/hero-workout.mp4" type="video/mp4" />
+            <source src="assets/videos/hero-workout-hd.mp4" type="video/mp4" />
             Tu navegador no soporta videos HTML5.
           </video>
           <div class="hero__overlay"></div>
@@ -115,19 +109,24 @@
             </p>
 
             <!-- Registration Form -->
-            <form class="hero__form form">
+            <form class="hero__form form" id="hero-form" novalidate>
               <div class="form__group">
                 <input
                   type="email"
                   class="form__input form__input--email"
+                  id="hero-email"
+                  name="email"
                   placeholder="Ingresa tu email"
                   required
                   aria-label="Correo electrónico"
+                  aria-describedby="hero-email-error"
                 />
                 <button type="submit" class="form__submit btn btn--secondary">
                   Comenzar Gratis
                 </button>
               </div>
+              <div class="form__error" id="hero-email-error" aria-live="polite"></div>
+              <div class="form__success" id="hero-form-success" aria-live="polite"></div>
             </form>
 
             <!-- Trust Indicators -->
@@ -166,7 +165,7 @@
             <div class="benefits__item benefit-card">
               <div class="benefit-card__icon">
                 <img
-                  src="assets/images/icons/home-icon.svg"
+                  src="assets/images/icons/dumbbell-icon.svg"
                   alt="Entrena desde casa"
                 />
               </div>
@@ -180,7 +179,7 @@
             <div class="benefits__item benefit-card">
               <div class="benefit-card__icon">
                 <img
-                  src="assets/images/icons/clock-icon.svg"
+                  src="assets/images/icons/infinity-icon.svg"
                   alt="Acceso 24/7"
                 />
               </div>
@@ -194,7 +193,7 @@
             <div class="benefits__item benefit-card">
               <div class="benefit-card__icon">
                 <img
-                  src="assets/images/icons/instructor-icon.svg"
+                  src="assets/images/icons/certificate-icon.svg"
                   alt="Instructores certificados"
                 />
               </div>
@@ -257,13 +256,36 @@
             <div class="demo__media">
               <div class="demo__video-container">
                 <img
-                  src="assets/images/app-preview.jpg"
+                  src="assets/images/app-preview.png"
                   alt="Preview de la aplicación FitLife Pro"
                   class="demo__image"
+                  id="demo-preview-image"
                 />
+                <video 
+                  class="demo__video" 
+                  id="demo-video" 
+                  controls 
+                  preload="metadata"
+                  style="display: none;"
+                  poster="assets/images/app-preview.jpg"
+                >
+                  <source src="assets/videos/demo-hd.mp4" type="video/mp4" />
+                  Tu navegador no soporta la reproducción de videos HTML5.
+                </video>
+                <button
+                  class="demo__close-btn close-button"
+                  aria-label="Cerrar video demo"
+                  id="demo-close-button"
+                  style="display: none;"
+                >
+                  <svg class="close-button__icon" viewBox="0 0 24 24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                  </svg>
+                </button>
                 <button
                   class="demo__play-btn play-button"
                   aria-label="Reproducir video demo"
+                  id="demo-play-button"
                 >
                   <svg class="play-button__icon" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z" />
@@ -389,10 +411,34 @@
             </p>
           </div>
 
-          <div class="testimonials__carousel carousel">
-            <div class="carousel__container">
+          <!-- Carousel -->
+          <article class="testimonials__carousel" role="region" aria-label="Carrusel de testimonios de usuarios" aria-live="polite">
+            <input type="radio" name="slides" id="slide-1" checked aria-label="Mostrar testimonio de María González">
+            <input type="radio" name="slides" id="slide-2" aria-label="Mostrar testimonio de Carlos Rodríguez">
+            <input type="radio" name="slides" id="slide-3" aria-label="Mostrar testimonio de Ana Martínez">
+            <input type="radio" name="slides" id="slide-4" aria-label="Mostrar testimonio de Luis Morales">
+            <input type="radio" name="slides" id="slide-5" aria-label="Mostrar testimonio de Sofía Herrera">
+
+            <!-- Navigation Controls -->
+            <div class="carousel__controls">
+              <button class="carousel__btn carousel__btn--prev" aria-label="Ver testimonio anterior" data-direction="prev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="sr-only">Anterior</span>
+              </button>
+              <button class="carousel__btn carousel__btn--next" aria-label="Ver siguiente testimonio" data-direction="next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="sr-only">Siguiente</span>
+              </button>
+            </div>
+
+            <!-- Carousel Slides -->
+            <ul class="carousel__container slides" role="tabpanel" aria-label="Testimonios de usuarios">
               <!-- Testimonial 1 -->
-              <div class="carousel__item testimonial-card">
+              <li class="carousel__item testimonial-card">
                 <div class="testimonial-card__content">
                   <div class="testimonial-card__rating">
                     <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
@@ -422,10 +468,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </li>
 
               <!-- Testimonial 2 -->
-              <div class="carousel__item testimonial-card">
+              <li class="carousel__item testimonial-card">
                 <div class="testimonial-card__content">
                   <div class="testimonial-card__rating">
                     <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
@@ -457,10 +503,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </li>
 
               <!-- Testimonial 3 -->
-              <div class="carousel__item testimonial-card">
+              <li class="carousel__item testimonial-card">
                 <div class="testimonial-card__content">
                   <div class="testimonial-card__rating">
                     <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
@@ -492,10 +538,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </li>
 
               <!-- Testimonial 4 -->
-              <div class="carousel__item testimonial-card">
+              <li class="carousel__item testimonial-card">
                 <div class="testimonial-card__content">
                   <div class="testimonial-card__rating">
                     <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
@@ -523,10 +569,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </li>
 
               <!-- Testimonial 5 -->
-              <div class="carousel__item testimonial-card">
+              <li class="carousel__item testimonial-card">
                 <div class="testimonial-card__content">
                   <div class="testimonial-card__rating">
                     <span class="testimonial-card__stars">⭐⭐⭐⭐⭐</span>
@@ -554,52 +600,19 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <!-- Carousel Navigation -->
-            <button
-              class="carousel__btn carousel__btn--prev"
-              aria-label="Testimonial anterior"
-            >
-              ‹
-            </button>
-            <button
-              class="carousel__btn carousel__btn--next"
-              aria-label="Siguiente testimonial"
-            >
-              ›
-            </button>
+              </li>
+            </ul>
 
             <!-- Carousel Dots -->
-            <div class="carousel__dots">
-              <button
-                class="carousel__dot carousel__dot--active"
-                aria-label="Ir al testimonial 1"
-                data-slide="0"
-              ></button>
-              <button
-                class="carousel__dot"
-                aria-label="Ir al testimonial 2"
-                data-slide="1"
-              ></button>
-              <button
-                class="carousel__dot"
-                aria-label="Ir al testimonial 3"
-                data-slide="2"
-              ></button>
-              <button
-                class="carousel__dot"
-                aria-label="Ir al testimonial 4"
-                data-slide="3"
-              ></button>
-              <button
-                class="carousel__dot"
-                aria-label="Ir al testimonial 5"
-                data-slide="4"
-              ></button>
-            </div>
-          </div>
+            <aside class="carousel__dots" role="tablist" aria-label="Indicadores de testimonios">
+              <label for="slide-1" id="dot-1" role="tab" aria-label="Ir al testimonio de María González" tabindex="0"></label>
+              <label for="slide-2" id="dot-2" role="tab" aria-label="Ir al testimonio de Carlos Rodríguez" tabindex="0"></label>
+              <label for="slide-3" id="dot-3" role="tab" aria-label="Ir al testimonio de Ana Martínez" tabindex="0"></label>
+              <label for="slide-4" id="dot-4" role="tab" aria-label="Ir al testimonio de Luis Morales" tabindex="0"></label>
+              <label for="slide-5" id="dot-5" role="tab" aria-label="Ir al testimonio de Sofía Herrera" tabindex="0"></label>
+            </aside>
+
+          </article>
         </div>
       </section>
 
@@ -661,9 +674,12 @@
           <div class="faq__list">
             <!-- FAQ Item 1 -->
             <div class="faq__item faq-item">
-              <button class="faq-item__question" aria-expanded="false">
+              <button class="faq-item__question" 
+                      aria-expanded="false"
+                      type="button"
+                      role="button">
                 <span>¿Necesito equipamiento especial para entrenar?</span>
-                <span class="faq-item__icon"></span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
               </button>
               <div class="faq-item__answer">
                 <p>
@@ -677,11 +693,14 @@
 
             <!-- FAQ Item 2 -->
             <div class="faq__item faq-item">
-              <button class="faq-item__question" aria-expanded="false">
+              <button class="faq-item__question" 
+                      aria-expanded="false"
+                      type="button"
+                      role="button">
                 <span
                   >¿Puedo cancelar mi suscripción en cualquier momento?</span
                 >
-                <span class="faq-item__icon"></span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
               </button>
               <div class="faq-item__answer">
                 <p>
@@ -694,11 +713,14 @@
 
             <!-- FAQ Item 3 -->
             <div class="faq__item faq-item">
-              <button class="faq-item__question" aria-expanded="false">
+              <button class="faq-item__question" 
+                      aria-expanded="false"
+                      type="button"
+                      role="button">
                 <span
                   >¿Las clases están disponibles en diferentes niveles?</span
                 >
-                <span class="faq-item__icon"></span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
               </button>
               <div class="faq-item__answer">
                 <p>
@@ -712,9 +734,12 @@
 
             <!-- FAQ Item 4 -->
             <div class="faq__item faq-item">
-              <button class="faq-item__question" aria-expanded="false">
+              <button class="faq-item__question" 
+                      aria-expanded="false"
+                      type="button"
+                      role="button">
                 <span>¿Puedo usar FitLife Pro en múltiples dispositivos?</span>
-                <span class="faq-item__icon"></span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
               </button>
               <div class="faq-item__answer">
                 <p>
@@ -737,7 +762,7 @@
           <!-- Brand Section -->
           <div class="footer__brand">
             <img
-              src="assets/images/logo-fitlife-white.svg"
+              src="assets/images/logo-fit-life-pro.png"
               alt="FitLife Pro"
               class="footer__logo"
             />
@@ -853,14 +878,17 @@
               Recibe tips de fitness, nuevas clases y ofertas exclusivas directo
               en tu email.
             </p>
-            <form class="newsletter__form">
+            <form class="newsletter__form" id="newsletter-form" novalidate>
               <div class="newsletter__form-group">
                 <input
                   type="email"
                   class="newsletter__input"
+                  id="newsletter-email"
+                  name="email"
                   placeholder="Tu email aquí"
                   required
                   aria-label="Email para newsletter"
+                  aria-describedby="newsletter-email-error"
                 />
                 <button
                   type="submit"
@@ -869,6 +897,8 @@
                   Suscribirse
                 </button>
               </div>
+              <div class="newsletter__error" id="newsletter-email-error" aria-live="polite"></div>
+              <div class="newsletter__success" id="newsletter-form-success" aria-live="polite"></div>
             </form>
           </div>
         </div>
